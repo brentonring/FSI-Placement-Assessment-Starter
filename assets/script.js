@@ -48,9 +48,10 @@ gbPlusBtn.addEventListener('click', function() {
 })
 
 gbMinusBtn.addEventListener('click', function() {
-   // if (gb > 0) {}
-    gb--
-    qty--
+    if (gb > 0) {
+        gb--
+        qty--
+    }
     updateGbQuantity(`${gb}`)
     updateQuantity(`${qty}`)
 })
@@ -68,8 +69,10 @@ ccPlusBtn.addEventListener('click', function() {
 })
 
 ccMinusBtn.addEventListener('click', function() {
-    cc--
-    qty--
+    if (cc > 0) {
+        cc--
+        qty--
+    }
     updateCcQuantity(`${cc}`)
     updateQuantity(`${qty}`)
 })
@@ -87,8 +90,10 @@ sugarPlusBtn.addEventListener('click', function() {
 })
 
 sugarMinusBtn.addEventListener('click', function() {
-    sugar--
-    qty--
+    if (sugar > 0) {
+        sugar--
+        qty--
+        }
     updateSugarQuantity(`${sugar}`)
     updateQuantity(`${qty}`)
 })
